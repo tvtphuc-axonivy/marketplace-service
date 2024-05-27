@@ -1,6 +1,6 @@
-package com.marketplaceservice.repository;
+package com.axonivy.market.repository;
 
-import com.marketplaceservice.entity.User;
+import com.axonivy.market.entity.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

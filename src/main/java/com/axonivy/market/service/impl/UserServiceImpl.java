@@ -1,14 +1,17 @@
-package com.marketplaceservice.service.impl;
+package com.axonivy.market.service.impl;
 
-import com.marketplaceservice.entity.User;
-import com.marketplaceservice.repository.UserRepository;
-import com.marketplaceservice.service.UserService;
+import com.axonivy.market.entity.User;
+import com.axonivy.market.repository.UserRepository;
+import lombok.extern.log4j.Log4j2;
+
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
+
 @Service
+@Log4j2
 public class UserServiceImpl implements UserService {
+
     private final UserRepository userRepository;
 
     public UserServiceImpl(UserRepository userRepository) {
@@ -16,7 +19,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> getAllUser() {
+    public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 }

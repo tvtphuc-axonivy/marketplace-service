@@ -1,4 +1,4 @@
-package com.marketplaceservice.entity;
+package com.axonivy.market.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -6,10 +6,12 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import static com.axonivy.market.Constants.USER_DOCUMENT;
+
 @Getter
 @Setter
 @NoArgsConstructor
-@Document("User")
+@Document(USER_DOCUMENT)
 public class User {
     @Id
     private String id;

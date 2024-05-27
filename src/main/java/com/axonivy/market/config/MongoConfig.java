@@ -1,4 +1,4 @@
-package com.marketplaceservice.config;
+package com.axonivy.market.config;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.config.AbstractMongoClientConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "com.marketplaceservice.repository")
+@EnableMongoRepositories(basePackages = "com.axonivy.market.repository")
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
     @Value("${spring.data.mongodb.host}")

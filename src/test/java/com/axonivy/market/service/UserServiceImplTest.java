@@ -1,8 +1,8 @@
-package com.marketplaceservice.service;
+package com.axonivy.market.service;
 
-import com.marketplaceservice.entity.User;
-import com.marketplaceservice.repository.UserRepository;
-import com.marketplaceservice.service.impl.UserServiceImpl;
+import com.axonivy.market.entity.User;
+import com.axonivy.market.repository.UserRepository;
+import com.axonivy.market.service.impl.UserServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,7 +32,7 @@ public class UserServiceImplTest {
         Mockito.when(userRepository.findAll()).thenReturn(mockResultReturn);
 
         //exercise
-        List<User> result = employeeService.getAllUser();
+        List<User> result = employeeService.getAllUsers();
 
         //Verify
         Assert.assertEquals(result, mockResultReturn);

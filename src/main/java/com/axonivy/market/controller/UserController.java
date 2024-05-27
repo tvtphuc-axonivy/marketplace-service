@@ -1,15 +1,18 @@
-package com.marketplaceservice.controller;
+package com.axonivy.market.controller;
 
-import com.marketplaceservice.entity.User;
-import com.marketplaceservice.service.UserService;
+import com.axonivy.market.entity.User;
+import com.axonivy.market.service.impl.UserService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import static com.axonivy.market.Constants.USER_MAPPING;
+
 @RestController
-@RequestMapping("/user")
+@RequestMapping(USER_MAPPING)
 public class UserController {
     private final UserService userService;
 
@@ -18,7 +21,7 @@ public class UserController {
     }
 
     @GetMapping
-    public List<User> getAllUser() {
-        return userService.getAllUser();
+    public ResponseEntity<List<User>> getAllUser() {
+        return ResponseEntity.ok(userService.getAllUsers());
     }
 }
