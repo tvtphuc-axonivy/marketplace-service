@@ -1,4 +1,4 @@
-package com.axonivy.market.service.impl;
+package com.axonivy.market.service;
 
 import com.axonivy.market.entity.User;
 

@@ -2,6 +2,7 @@ package com.axonivy.market.service.impl;
 
 import com.axonivy.market.entity.User;
 import com.axonivy.market.repository.UserRepository;
+import com.axonivy.market.service.UserService;
 import lombok.extern.log4j.Log4j2;
 
 import org.springframework.stereotype.Service;

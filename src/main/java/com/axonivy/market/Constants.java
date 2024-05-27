@@ -6,4 +6,7 @@ public class Constants {
 
     //MAPPING
     public static final String USER_MAPPING = "/user";
+
+    //ERROR MESSAGE
+    public static final String INVALID_MISSING_HEADER_ERROR_MESSAGE = "Invalid or missing header";
 }
