@@ -3,7 +3,7 @@ package com.axonivy.market.exceptions;
 
 import java.io.Serial;
 
-import static com.axonivy.market.Constants.ErrorConstants.INVALID_MISSING_HEADER_ERROR_MESSAGE;
+import static com.axonivy.market.Constants.ErrorMessageConstants.INVALID_MISSING_HEADER_ERROR_MESSAGE;
 
 public class MissingHeaderException extends Exception {
 

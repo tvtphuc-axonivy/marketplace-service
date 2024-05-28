@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import static com.axonivy.market.Constants.MappingConstants.USER_MAPPING;
+import static com.axonivy.market.Constants.RequestMappingConstants.USER_MAPPING;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
