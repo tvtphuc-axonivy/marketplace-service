@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
-import static com.axonivy.market.Constants.USER_MAPPING;
+import static com.axonivy.market.Constants.MappingConstants.USER_MAPPING;
 
 @RestController
 @RequestMapping(USER_MAPPING)
